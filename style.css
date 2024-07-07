@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+  font-family: "Muli", sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 42px;
+    background-color: #4d4a4a64;
+}
+
+.container {
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+  background: var(--bg-color);
+  border: 12px solid var(--bg-color);
+  filter: var(--filter1);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container > h2{
+    font-size: 32px;
+}
+.setting{
+    width: 400px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.setting > label{
+    font-size: 24px;
+}
+
+.setting > input{
+    margin-left: 30px;
+    font-size: 24px;
+}
+.setting > input{ 
+    margin-left: 30px;
+    font-size: 24px;
+    width: 50px;
+    height: 30px;
+}
+
+
+.result-container {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 200px;
+
+
+}
+
+textarea {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 28px;
+  margin-top: auto;
+  outline: none;
+  resize: none;
+}
+
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap:50px;
+}
+
+.btn {
+  width: 100%;
+  font-size: 22px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 32px;
+        background-color: #4d4a4a64;
+        width: 100vw;
+    }
+
+    .container > h2{
+        font-size: 24px;
+    }
+  .result-container {
+    font-size: 14px;
+  }
+}
